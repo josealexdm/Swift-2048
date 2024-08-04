@@ -62,6 +62,22 @@ class ViewController: UIViewController {
         cell31.text = "\(gameBrain.gameArray[3][1])"
         cell32.text = "\(gameBrain.gameArray[3][2])"
         cell33.text = "\(gameBrain.gameArray[3][3])"
+        cell00.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[0][0])")
+        cell01.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[0][1])")
+        cell02.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[0][2])")
+        cell03.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[0][3])")
+        cell10.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[1][0])")
+        cell11.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[1][1])")
+        cell12.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[1][2])")
+        cell13.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[1][3])")
+        cell20.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[2][0])")
+        cell21.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[2][1])")
+        cell22.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[2][2])")
+        cell23.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[2][3])")
+        cell30.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[3][0])")
+        cell31.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[3][1])")
+        cell32.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[3][2])")
+        cell33.backgroundColor = UIColor(named: "Color\(gameBrain.gameArray[3][3])")
         labelScore.text = "\(gameBrain.score)"
         // Check if game is over
         if gameBrain.checkGameOver() == true {
@@ -75,49 +91,39 @@ class ViewController: UIViewController {
     }
     
     @IBAction func swipedRight(_ sender: UISwipeGestureRecognizer) {
-        print("Swiped Right!")
         var i = 0
-        gameBrain.pointerArray = [3, 3, 3, 3]
-        repeat {
-            gameBrain.moveRight()
-            i += 1
-        } while i < 3
-        gameBrain.continueGame()
-        updateCells()
-    }
-    
-    @IBAction func swipedLeft(_ sender: UISwipeGestureRecognizer) {
-        print("Swiped Left!")
-        var i = 0
-        gameBrain.pointerArray = [0, 0, 0, 0]
-        repeat {
-            gameBrain.moveLeft()
-            i += 1
-        } while i < 3
-        gameBrain.continueGame()
-        updateCells()
-    }
-    
-    @IBAction func swipedDown(_ sender: UISwipeGestureRecognizer) {
-        print("Swiped Down!")
-        var i = 0
-        gameBrain.pointerArray = [3, 3, 3, 3]
-        repeat {
-            gameBrain.moveDown()
-            i += 1
-        } while i < 3
-        gameBrain.continueGame()
-        updateCells()
-    }
-    
-    @IBAction func swipedUp(_ sender: UISwipeGestureRecognizer) {
-        print("Swiped Up!")
-        var i = 0
-        gameBrain.pointerArray = [0, 0, 0, 0]
-        repeat {
-            gameBrain.moveUp()
-            i += 1
-        } while i < 3
+        switch sender.direction {
+        case .right:
+            print("Swiped right")
+            gameBrain.pointerArray = [3, 3, 3, 3]
+            repeat {
+                gameBrain.moveRight()
+                i += 1
+            } while i < 3
+        case .down:
+            print("Swiped down")
+            gameBrain.pointerArray = [3, 3, 3, 3]
+            repeat {
+                gameBrain.moveDown()
+                i += 1
+            } while i < 3
+        case .left:
+            print("Swiped left")
+            gameBrain.pointerArray = [0, 0, 0, 0]
+            repeat {
+                gameBrain.moveLeft()
+                i += 1
+            } while i < 3
+        case .up:
+            print("Swiped up")
+            gameBrain.pointerArray = [0, 0, 0, 0]
+            repeat {
+                gameBrain.moveUp()
+                i += 1
+            } while i < 3
+        default:
+            break
+        }
         gameBrain.continueGame()
         updateCells()
     }

@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6FBA3CBD2C2105E800FE80C0 /* 2048-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2048-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBA3CBD2C2105E800FE80C0 /* 2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBA3CC02C2105E800FE80C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FBA3CC22C2105E800FE80C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FBA3CC42C2105E800FE80C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,9 +45,9 @@
 		6FBA3CC92C2105E900FE80C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FBA3CCC2C2105E900FE80C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FBA3CCE2C2105E900FE80C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FBA3CD32C2105E900FE80C0 /* 2048-GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2048-GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBA3CD32C2105E900FE80C0 /* 2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBA3CD72C2105E900FE80C0 /* _048_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _048_GameTests.swift; sourceTree = "<group>"; };
-		6FBA3CDD2C2105E900FE80C0 /* 2048-GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2048-GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBA3CDD2C2105E900FE80C0 /* 2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBA3CE12C2105E900FE80C0 /* _048_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _048_GameUITests.swift; sourceTree = "<group>"; };
 		6FBA3CE32C2105E900FE80C0 /* _048_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _048_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FBA3CF02C21094300FE80C0 /* GameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 		6FBA3CBE2C2105E800FE80C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FBA3CBD2C2105E800FE80C0 /* 2048-Game.app */,
-				6FBA3CD32C2105E900FE80C0 /* 2048-GameTests.xctest */,
-				6FBA3CDD2C2105E900FE80C0 /* 2048-GameUITests.xctest */,
+				6FBA3CBD2C2105E800FE80C0 /* 2048.app */,
+				6FBA3CD32C2105E900FE80C0 /* 2048Tests.xctest */,
+				6FBA3CDD2C2105E900FE80C0 /* 2048UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FBA3CBC2C2105E800FE80C0 /* 2048-Game */ = {
+		6FBA3CBC2C2105E800FE80C0 /* 2048 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FBA3CE72C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048-Game" */;
+			buildConfigurationList = 6FBA3CE72C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048" */;
 			buildPhases = (
 				6FBA3CB92C2105E800FE80C0 /* Sources */,
 				6FBA3CBA2C2105E800FE80C0 /* Frameworks */,
@@ -145,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = "2048-Game";
+			name = 2048;
 			productName = "2048-Game";
-			productReference = 6FBA3CBD2C2105E800FE80C0 /* 2048-Game.app */;
+			productReference = 6FBA3CBD2C2105E800FE80C0 /* 2048.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6FBA3CD22C2105E900FE80C0 /* 2048-GameTests */ = {
+		6FBA3CD22C2105E900FE80C0 /* 2048Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FBA3CEA2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048-GameTests" */;
+			buildConfigurationList = 6FBA3CEA2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048Tests" */;
 			buildPhases = (
 				6FBA3CCF2C2105E900FE80C0 /* Sources */,
 				6FBA3CD02C2105E900FE80C0 /* Frameworks */,
@@ -163,14 +163,14 @@
 			dependencies = (
 				6FBA3CD52C2105E900FE80C0 /* PBXTargetDependency */,
 			);
-			name = "2048-GameTests";
+			name = 2048Tests;
 			productName = "2048-GameTests";
-			productReference = 6FBA3CD32C2105E900FE80C0 /* 2048-GameTests.xctest */;
+			productReference = 6FBA3CD32C2105E900FE80C0 /* 2048Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6FBA3CDC2C2105E900FE80C0 /* 2048-GameUITests */ = {
+		6FBA3CDC2C2105E900FE80C0 /* 2048UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FBA3CED2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048-GameUITests" */;
+			buildConfigurationList = 6FBA3CED2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048UITests" */;
 			buildPhases = (
 				6FBA3CD92C2105E900FE80C0 /* Sources */,
 				6FBA3CDA2C2105E900FE80C0 /* Frameworks */,
@@ -181,9 +181,9 @@
 			dependencies = (
 				6FBA3CDF2C2105E900FE80C0 /* PBXTargetDependency */,
 			);
-			name = "2048-GameUITests";
+			name = 2048UITests;
 			productName = "2048-GameUITests";
-			productReference = 6FBA3CDD2C2105E900FE80C0 /* 2048-GameUITests.xctest */;
+			productReference = 6FBA3CDD2C2105E900FE80C0 /* 2048UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FBA3CB82C2105E800FE80C0 /* Build configuration list for PBXProject "2048-Game" */;
+			buildConfigurationList = 6FBA3CB82C2105E800FE80C0 /* Build configuration list for PBXProject "2048" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FBA3CBC2C2105E800FE80C0 /* 2048-Game */,
-				6FBA3CD22C2105E900FE80C0 /* 2048-GameTests */,
-				6FBA3CDC2C2105E900FE80C0 /* 2048-GameUITests */,
+				6FBA3CBC2C2105E800FE80C0 /* 2048 */,
+				6FBA3CD22C2105E900FE80C0 /* 2048Tests */,
+				6FBA3CDC2C2105E900FE80C0 /* 2048UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,12 +290,12 @@
 /* Begin PBXTargetDependency section */
 		6FBA3CD52C2105E900FE80C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6FBA3CBC2C2105E800FE80C0 /* 2048-Game */;
+			target = 6FBA3CBC2C2105E800FE80C0 /* 2048 */;
 			targetProxy = 6FBA3CD42C2105E900FE80C0 /* PBXContainerItemProxy */;
 		};
 		6FBA3CDF2C2105E900FE80C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6FBA3CBC2C2105E800FE80C0 /* 2048-Game */;
+			target = 6FBA3CBC2C2105E800FE80C0 /* 2048 */;
 			targetProxy = 6FBA3CDE2C2105E900FE80C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,18 +449,18 @@
 				DEVELOPMENT_TEAM = JS264R7Z4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "2048-Game/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.josealexdm.-048-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.josealexdm.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,18 +478,18 @@
 				DEVELOPMENT_TEAM = JS264R7Z4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "2048-Game/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.josealexdm.-048-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.josealexdm.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -513,7 +513,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2048-Game.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2048-Game";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2048.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2048";
 			};
 			name = Debug;
 		};
@@ -533,7 +533,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2048-Game.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2048-Game";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2048.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2048";
 			};
 			name = Release;
 		};
@@ -576,7 +576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FBA3CB82C2105E800FE80C0 /* Build configuration list for PBXProject "2048-Game" */ = {
+		6FBA3CB82C2105E800FE80C0 /* Build configuration list for PBXProject "2048" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FBA3CE52C2105E900FE80C0 /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FBA3CE72C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048-Game" */ = {
+		6FBA3CE72C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FBA3CE82C2105E900FE80C0 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FBA3CEA2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048-GameTests" */ = {
+		6FBA3CEA2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FBA3CEB2C2105E900FE80C0 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FBA3CED2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048-GameUITests" */ = {
+		6FBA3CED2C2105E900FE80C0 /* Build configuration list for PBXNativeTarget "2048UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FBA3CEE2C2105E900FE80C0 /* Debug */,

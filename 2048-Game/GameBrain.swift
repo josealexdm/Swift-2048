@@ -13,8 +13,9 @@ struct GameBrain {
     var score = 0
     
     mutating func startNewGame() {
-        //gameArray = [["", "", "", ""], ["", "", "", ""], ["", "", "", ""], ["", "", "", ""]]
-        gameArray = [["2", "4", "8", "16"], ["16", "8", "4", "2"], ["2", "64", "8", "16"], ["1024", "", "", ""]]
+        gameArray = [["", "", "", ""], ["", "", "", ""], ["", "", "", ""], ["", "", "", ""]]
+        //gameArray = [["2", "", "", ""], ["", "0", "", ""], ["", "", "4", ""], ["", "", "", "8"]]
+        //gameArray = [["", "", "", ""], ["2", "0", "4", "8"], ["", "", "", ""], ["", "", "", ""]]
         score = 0
         var count = 0
         var row = 0
@@ -76,7 +77,7 @@ struct GameBrain {
         }
         return true
     }
-    
+  
     mutating func moveRight() {
         var pointer = 0
         var col = 0
