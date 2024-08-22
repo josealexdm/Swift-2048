@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  2048-Game
+//  2048
 //
-//  Created by user262803 on 6/17/24.
+//  Created by Jose Alexandre de Moraes on 6/17/24.
 //
 
 import UIKit
@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     var gameBrain = GameBrain()
+    var timer = Timer()
+    var i = 0
+    var direction: UISwipeGestureRecognizer.Direction = .right
 
     @IBOutlet var swipeRight: UISwipeGestureRecognizer!
     @IBOutlet var swipeLeft: UISwipeGestureRecognizer!
@@ -91,41 +94,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func swipedRight(_ sender: UISwipeGestureRecognizer) {
-        var i = 0
-        switch sender.direction {
+        i = 0
+        direction = sender.direction
+        switch direction {
         case .right:
-            print("Swiped right")
+            //print("Swiped right")
             gameBrain.pointerArray = [3, 3, 3, 3]
-            repeat {
-                gameBrain.moveRight()
-                i += 1
-            } while i < 3
         case .down:
-            print("Swiped down")
+            //print("Swiped down")
             gameBrain.pointerArray = [3, 3, 3, 3]
-            repeat {
-                gameBrain.moveDown()
-                i += 1
-            } while i < 3
         case .left:
-            print("Swiped left")
+            //print("Swiped left")
             gameBrain.pointerArray = [0, 0, 0, 0]
-            repeat {
-                gameBrain.moveLeft()
-                i += 1
-            } while i < 3
         case .up:
-            print("Swiped up")
+            //print("Swiped up")
             gameBrain.pointerArray = [0, 0, 0, 0]
-            repeat {
-                gameBrain.moveUp()
-                i += 1
-            } while i < 3
         default:
             break
         }
-        gameBrain.continueGame()
-        updateCells()
+        timer = Timer.scheduledTimer(timeInterval: 0.08, target: self, selector: #selector(self.moveNumbers), userInfo: nil, repeats: true)
     }
     
     @IBAction func buttonNewGamePressed(_ sender: UIButton) {
@@ -138,5 +125,29 @@ class ViewController: UIViewController {
         swipeRight.isEnabled = true
         updateCells()
     }
+
+    @objc func moveNumbers() {
+        if i < 3 {
+            switch direction {
+            case .right:
+                gameBrain.moveRight()
+            case .left:
+                gameBrain.moveLeft()
+            case .down:
+                gameBrain.moveDown()
+            case .up:
+                gameBrain.moveUp()
+            default:
+                break
+            }
+            updateCells()
+            i += 1
+        } else {
+            timer.invalidate()
+            gameBrain.continueGame()
+            updateCells()
+        }
+    }
 }
+
 

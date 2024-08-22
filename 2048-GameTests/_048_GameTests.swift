@@ -2,11 +2,11 @@
 //  _048_GameTests.swift
 //  2048-GameTests
 //
-//  Created by user262803 on 6/17/24.
+//  Created by Jose Alexandre de Moraes on 6/17/24.
 //
 
 import XCTest
-@testable import _048_Game
+@testable import _048
 
 final class _048_GameTests: XCTestCase {
 

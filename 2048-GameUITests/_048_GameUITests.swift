@@ -2,7 +2,7 @@
 //  _048_GameUITests.swift
 //  2048-GameUITests
 //
-//  Created by user262803 on 6/17/24.
+//  Created by Jose Alexandre de Moraes on 6/17/24.
 //
 
 import XCTest

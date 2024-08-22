@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  2048-Game
+//  2048
 //
-//  Created by user262803 on 6/17/24.
+//  Created by Jose Alexandre de Moraes on 6/17/24.
 //
 
 import UIKit
